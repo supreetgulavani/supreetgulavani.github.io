@@ -3,17 +3,15 @@ layout: default
 title: Contact
 ---
 
-<p class="eyebrow"><span class="pad" aria-hidden="true"></span>§04 — Contact</p>
+<!-- <p class="eyebrow"><span class="pad" aria-hidden="true"></span>Contact</p> -->
 <h1>Contact</h1>
-<p class="role">Open to roles in hardware design, verification, and firmware. Reach out through any of the channels below.</p>
+<p class="role">Open to roles in hardware design, verification, and firmware. Reach out via email.</p>
 
 <div class="contact-row" style="font-size:14px;">
   <a href="mailto:sgsupreetgulavani@gmail.com">sgsupreetgulavani@gmail.com</a>
-  <span>+91 7776991484</span>
-  <span>Ratnagiri, Maharashtra, India</span>
 </div>
 
-<div class="card-grid" style="margin-top:32px; max-width:640px;">
+<!-- <div class="card-grid" style="margin-top:32px; max-width:640px;">
   <a class="nav-card" href="mailto:sgsupreetgulavani@gmail.com">
     <h3>Email</h3>
     <p>sgsupreetgulavani@gmail.com</p>
@@ -26,7 +24,7 @@ title: Contact
     <h3>GitHub</h3>
     <p>Browse project repos</p>
   </a>
-</div>
+</div> -->
 
 <!-- <section id="message-form">
   <p class="sec-label"><span class="tag">§05</span> Send a message</p>

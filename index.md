@@ -5,7 +5,7 @@ title: Home
 
 <!-- <p class="eyebrow"><span class="pad" aria-hidden="true"></span>PCB · TOP LAYER · REV 2026</p> -->
 <h1>Supreet Gulavani</h1>
-<p class="role">Hardware Design &amp; Verification Engineer — RTL, FPGA bring-up, DMA engines, and PCIe. 1 yr 8 mo across HP, Intel, and NXP, building the low-level layer where firmware meets silicon.</p>
+<p class="role">M.S. ECE | Computer Architecture | ASIC Design | DFT</p>
 
 <!-- <div class="contact-row">
   <a href="mailto:sgsupreetgulavani@gmail.com">sgsupreetgulavani@gmail.com</a>
@@ -17,7 +17,6 @@ title: Home
 <div class="hero-image">
     <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Supreet Gulavani">
   </div>
-</div>
 
 <!-- <p style="margin-top:8px;"><a href="{{ '/resume/' | relative_url }}" class="btn">View Resume</a>
 &nbsp;<a href="{{ '/assets/files/Supreet_Gulavani_Resume.pdf' | relative_url }}" class="btn ghost">Download PDF ↓</a></p>

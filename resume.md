@@ -3,12 +3,12 @@ layout: default
 title: Resume
 ---
 
-<p class="eyebrow"><span class="pad" aria-hidden="true"></span>Resume</p>
+<!-- <p class="eyebrow"><span class="pad" aria-hidden="true"></span>Resume</p> -->
 <h1>Resume</h1>
-<p class="role">Full work history and technical skills. <a href="{{ '/assets/files/Supreet_Gulavani_Resume.pdf' | relative_url }}">Download the PDF ↓</a></p>
+<p class="role"><a href="{{ '/assets/files/Supreet_Gulavani_Resume.pdf' | relative_url }}">Download the PDF ↓</a></p>
 
 <section id="experience">
-  <p class="sec-label"><span class="tag">§01</span> Experience</p>
+  <p class="sec-label"><span class="tag"></span> Experience</p>
 
   <div class="job">
     <div class="job-meta"><span class="dates">MAY 2024 — FEB 2025</span>Spring, TX, USA</div>
@@ -76,7 +76,7 @@ title: Resume
 </section>
 
 <section id="skills">
-  <p class="sec-label"><span class="tag">§02</span> Skills</p>
+  <p class="sec-label"><span class="tag"></span> Skills</p>
   <div class="pin-grid">
     <div class="pin-block">
       <h3>Languages</h3>

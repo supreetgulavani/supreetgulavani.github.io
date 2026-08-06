@@ -3,10 +3,10 @@ layout: default
 title: About
 ---
 
-<p class="eyebrow"><span class="pad" aria-hidden="true"></span>§00 — Summary</p>
+<p class="eyebrow"><span class="pad" aria-hidden="true"></span> Summary</p>
 <h1>About</h1>
 
-<p class="lede">Proficient in RTL design, FPGA bring-up, DMA engines, and PCIe, with a working range across embedded systems, simulation tooling, and low-level hardware–software integration. Research interests span computer architecture and embedded systems, with current independent work on adiabatic reversible logic and a pipelined RISC-V core.</p>
+<p class="lede">Proficient in RTL design, FPGA bring-up, DMA engines, and PCIe, with a working range across embedded systems, simulation tooling, and low-level hardware–software integration. Research interests span computer architecture and embedded systems. Currently bulding LLM-based DFT tools</p>
 
 <section id="education">
   <p class="sec-label"><span class="tag"></span> Education</p>
