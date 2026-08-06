@@ -5,7 +5,7 @@ title: Home
 
 <!-- <p class="eyebrow"><span class="pad" aria-hidden="true"></span>PCB · TOP LAYER · REV 2026</p> -->
 <h1>Supreet Gulavani</h1>
-<p class="role">M.S. ECE | Computer Architecture | ASIC Design | DFT</p>
+<p class="role">M.S. ECE | Computer Architecture | ASIC Design | DFT </p>
 
 <!-- <div class="contact-row">
   <a href="mailto:sgsupreetgulavani@gmail.com">sgsupreetgulavani@gmail.com</a>
