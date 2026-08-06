@@ -6,7 +6,7 @@ title: About
 
 <h1>About</h1>
 
-<p class="lede">Proficient in RTL design, FPGA bring-up, DMA engines, and PCIe, with a working range across embedded systems, simulation tooling, and low-level hardware–software integration. Research interests span computer architecture and embedded systems. Currently bulding LLM-based DFT tools</p>
+<p class="lede">Proficient in RTL design, FPGA bring-up, DMA engines, and PCIe, with a working range across embedded systems, simulation tooling, and low-level hardware–software integration. Research interests span computer architecture and embedded systems. Currently building LLM-based DFT tools</p>
 
 <section id="education">
   <p class="sec-label"><span class="tag"></span> Education</p>
