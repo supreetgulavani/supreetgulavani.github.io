@@ -1,0 +1,38 @@
+title: Supreet Gulavani
+email: sgsupreetgulavani@gmail.com
+author: Supreet Gulavani
+description: >- 
+  Hello! I'm a Silicon Engineer.
+baseurl: "/portfolio" # the subpath of your site, e.g. /portfolio
+url: "https://supreetgulavani.github.io" # the base hostname & protocol for your site
+
+theme: minima
+
+permalink: pretty
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+navigation:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Projects
+    url: /projects/
+  - title: Resume
+    url: /resume/
+  - title: Contact
+    url: /contact/
+
+# Build settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle
