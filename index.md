@@ -7,11 +7,16 @@ title: Home
 <h1>Supreet Gulavani</h1>
 <p class="role">Hardware Design &amp; Verification Engineer — RTL, FPGA bring-up, DMA engines, and PCIe. 1 yr 8 mo across HP, Intel, and NXP, building the low-level layer where firmware meets silicon.</p>
 
-<div class="contact-row">
+<!-- <div class="contact-row">
   <a href="mailto:sgsupreetgulavani@gmail.com">sgsupreetgulavani@gmail.com</a>
-  <span>Ratnagiri, Maharashtra, India</span>
   <a href="https://linkedin.com/in/supreetgulavani" target="_blank">LinkedIn</a>
   <a href="https://github.com/supreetgulavani" target="_blank">GitHub</a>
+</div> -->
+
+
+<div class="hero-image">
+    <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Supreet Gulavani">
+  </div>
 </div>
 
 <!-- <p style="margin-top:8px;"><a href="{{ '/resume/' | relative_url }}" class="btn">View Resume</a>
