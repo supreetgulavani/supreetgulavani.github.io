@@ -3,14 +3,14 @@ layout: default
 title: Projects
 ---
 
-<p class="eyebrow"><span class="pad" aria-hidden="true"></span>Projects</p>
+
 <h1>Projects</h1>
 <p class="role">A mix of independent research, coursework, and personal builds spanning RTL, verification, and FPGA systems.</p>
 
 <div class="proj-grid" style="margin-top:24px;">
 
   <div class="proj">
-    <div class="proj-head"><h3>LLM-based ICL/PDL Generator</h3><span class="status">PATENT PENDING</span></div>
+    <div class="proj-head"><h3>LLM-based ICL/PDL Generator</h3><span class="status">IN PROGRESS</span></div>
     <p>Generator for ICL/PDL leveraging large language models.</p>
   </div>
 

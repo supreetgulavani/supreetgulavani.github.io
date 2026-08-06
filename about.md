@@ -3,7 +3,7 @@ layout: default
 title: About
 ---
 
-<p class="eyebrow"><span class="pad" aria-hidden="true"></span> Summary</p>
+
 <h1>About</h1>
 
 <p class="lede">Proficient in RTL design, FPGA bring-up, DMA engines, and PCIe, with a working range across embedded systems, simulation tooling, and low-level hardware–software integration. Research interests span computer architecture and embedded systems. Currently bulding LLM-based DFT tools</p>
@@ -14,12 +14,10 @@ title: About
     <div class="edu-card">
       <p class="school">Portland State University</p>
       <p class="deg">M.S. Electrical &amp; Computer Engineering · Sep 2021 – Jun 2023 · Portland, OR, USA</p>
-      <p class="gpa">GPA 3.36 / 4.00</p>
     </div>
     <div class="edu-card">
       <p class="school">Savitribai Phule Pune University</p>
       <p class="deg">B.E. Electronics &amp; Telecommunication · Aug 2016 – May 2020 · Pune, MH, India</p>
-      <p class="gpa">GPA 7.79 / 10.00</p>
     </div>
   </div>
 </section>
