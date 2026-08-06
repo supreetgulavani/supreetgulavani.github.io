@@ -3,7 +3,7 @@ layout: default
 title: Resume
 ---
 
-<p class="eyebrow"><span class="pad" aria-hidden="true"></span>§01 — Resume</p>
+<p class="eyebrow"><span class="pad" aria-hidden="true"></span>Resume</p>
 <h1>Resume</h1>
 <p class="role">Full work history and technical skills. <a href="{{ '/assets/files/Supreet_Gulavani_Resume.pdf' | relative_url }}">Download the PDF ↓</a></p>
 

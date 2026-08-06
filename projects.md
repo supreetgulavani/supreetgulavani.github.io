@@ -3,7 +3,7 @@ layout: default
 title: Projects
 ---
 
-<p class="eyebrow"><span class="pad" aria-hidden="true"></span>§03 — Projects</p>
+<p class="eyebrow"><span class="pad" aria-hidden="true"></span>Projects</p>
 <h1>Projects</h1>
 <p class="role">A mix of independent research, coursework, and personal builds spanning RTL, verification, and FPGA systems.</p>
 

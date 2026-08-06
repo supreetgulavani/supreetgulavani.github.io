@@ -9,7 +9,7 @@ title: About
 <p class="lede">Proficient in RTL design, FPGA bring-up, DMA engines, and PCIe, with a working range across embedded systems, simulation tooling, and low-level hardware–software integration. Research interests span computer architecture and embedded systems, with current independent work on adiabatic reversible logic and a pipelined RISC-V core.</p>
 
 <section id="education">
-  <p class="sec-label"><span class="tag">§01</span> Education</p>
+  <p class="sec-label"><span class="tag"></span> Education</p>
   <div class="edu">
     <div class="edu-card">
       <p class="school">Portland State University</p>
@@ -25,7 +25,7 @@ title: About
 </section>
 
 <section id="awards">
-  <p class="sec-label"><span class="tag">§02</span> Awards &amp; Achievements</p>
+  <p class="sec-label"><span class="tag"></span> Awards &amp; Achievements</p>
   <ul class="awards">
     <li>2nd Place, Barclays Tech Innovation Challenge — India, 2017</li>
     <li>3rd Place, National Entrepreneur Challenge — India, 2018</li>

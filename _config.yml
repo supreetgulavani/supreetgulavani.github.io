@@ -6,7 +6,7 @@ description: >-
 baseurl: "/portfolio" # the subpath of your site, e.g. /portfolio
 url: "https://supreetgulavani.github.io" # the base hostname & protocol for your site
 
-theme: minima
+#theme: minima
 
 permalink: pretty
 

@@ -28,7 +28,7 @@ title: Contact
   </a>
 </div>
 
-<section id="message-form">
+<!-- <section id="message-form">
   <p class="sec-label"><span class="tag">§05</span> Send a message</p>
 
   <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
@@ -48,3 +48,4 @@ title: Contact
     <button type="submit" class="btn">Send message</button>
   </form>
 </section>
+ -->
