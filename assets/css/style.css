@@ -22,10 +22,14 @@ body{
   color:var(--text);
   font-family:'IBM Plex Sans', sans-serif;
   -webkit-font-smoothing:antialiased;
+  cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cg stroke='%23e8a765' stroke-width='1.6' fill='none'%3E%3Ccircle cx='12' cy='12' r='5'/%3E%3Cline x1='12' y1='0' x2='12' y2='7'/%3E%3Cline x1='12' y1='17' x2='12' y2='24'/%3E%3Cline x1='0' y1='12' x2='7' y2='12'/%3E%3Cline x1='17' y1='12' x2='24' y2='12'/%3E%3C/g%3E%3C/svg%3E") 12 12, auto;
   background-image:
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='78' height='45' viewBox='0 0 78 45'%3E%3Cg fill='none' stroke='%2322392f' stroke-width='1'%3E%3Cpolygon points='52,22.5 39,45 13,45 0,22.5 13,0 39,0'/%3E%3Cpolygon points='91,0 78,22.5 52,22.5 39,0 52,-22.5 78,-22.5'/%3E%3Cpolygon points='91,45 78,67.5 52,67.5 39,45 52,22.5 78,22.5'/%3E%3C/g%3E%3C/svg%3E");
   background-size:78px 45px;
   background-repeat:repeat;
+}
+a, button, .btn, .nav-card, .chip, input, textarea, label{
+  cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Ccircle cx='6' cy='6' r='4' fill='%23e8a765'/%3E%3Cline x1='6' y1='6' x2='16' y2='16' stroke='%23e8a765' stroke-width='1.6'/%3E%3C/svg%3E") 6 6, pointer;
 }
 /* body{
   margin:0;
