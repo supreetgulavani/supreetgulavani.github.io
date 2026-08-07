@@ -8,7 +8,7 @@ title: Resume
 <p class="role"><a href="{{ '/assets/files/Supreet_Gulavani_Resume.pdf' | relative_url }}">Download the PDF ↓</a></p>
 
 <section id="experience">
-  <p class="sec-label"><span class="tag"></span> Experience</p>
+  <p class="sec-label"><span class="tag"></span> <h3>Work Experience</h3></p>
 
   <div class="job">
     <div class="job-meta"><span class="dates">MAY 2024 — FEB 2025</span>Spring, TX, USA</div>
