@@ -13,11 +13,11 @@ title: About
   <div class="edu">
     <div class="edu-card">
       <p class="school">Portland State University</p>
-      <p class="deg">M.S. Electrical &amp; Computer Engineering · Sep 2021 – Jun 2023 · Portland, OR, USA</p>
+      <p class="deg">M.S. Electrical &amp; Computer Engineering · Jun 2023 <br> Portland, OR, USA</p>
     </div>
     <div class="edu-card">
       <p class="school">Savitribai Phule Pune University</p>
-      <p class="deg">B.E. Electronics &amp; Telecommunication · Aug 2016 – May 2020 · Pune, MH, India</p>
+      <p class="deg">B.E. Electronics &amp; Telecommunication · May 2020 <br> Pune, MH, India</p>
     </div>
   </div>
 </section>
