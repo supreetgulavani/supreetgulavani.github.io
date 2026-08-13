@@ -3,8 +3,8 @@ email: sgsupreetgulavani@gmail.com
 author: Supreet Gulavani
 description: >- 
   Hello! I'm a Silicon Engineer.
-baseurl: "/portfolio" # the subpath of your site, e.g. /portfolio
-url: "https://supreetgulavani.github.io" # the base hostname & protocol for your site
+baseurl: "" 
+url: "https://supreetgulavani.github.io" 
 
 #theme: minima
 
