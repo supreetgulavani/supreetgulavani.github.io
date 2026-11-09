@@ -36,7 +36,7 @@ redirect_from:
           <span class="tag">WRITTEN BACK · {{ r.token | upcase }}</span>
           <h2 class="t-h3">{{ r.title }}</h2>
           <p class="t-small sub">{{ r.body }}</p>
-          {% if r.link %}{% if r.link contains 'mailto:' %}<a class="t-small" href="{{ r.link }}">{{ r.link_text }}</a>{% else %}<a class="t-small" href="{% if r.link contains '://' %}{{ r.link }}{% else %}{{ r.link | relative_url }}{% endif %}" target="_blank" rel="noopener noreferrer">{{ r.link_text }}<span class="sr-only"> (opens in a new tab)</span></a>{% endif %}{% endif %}
+          {% if r.link %}{% if r.link contains 'github.com' or r.link contains 'linkedin.com' %}<a class="t-small" href="{{ r.link }}" target="_blank" rel="noopener noreferrer">{{ r.link_text }}<span class="sr-only"> (opens in a new tab)</span></a>{% else %}<a class="t-small" href="{% if r.link contains '://' or r.link contains 'mailto:' %}{{ r.link }}{% else %}{{ r.link | relative_url }}{% endif %}">{{ r.link_text }}</a>{% endif %}{% endif %}
         </div>
         {% endfor %}
       </div>
@@ -100,7 +100,7 @@ redirect_from:
         {% endfor %}
       </ul>
       {% if w.awards %}<ul class="edu t-small sub">{% for a in w.awards %}<li>{{ a }}</li>{% endfor %}</ul>{% endif %}
-      <a href="{{ resume }}" class="btn btn-accent" style="align-self: flex-start" target="_blank" rel="noopener noreferrer">Download the résumé (PDF)<span class="sr-only"> (opens in a new tab)</span></a>
+      <a href="{{ resume }}" class="btn btn-accent" style="align-self: flex-start">Download the résumé (PDF)</a>
     </div>
   </section>
 
