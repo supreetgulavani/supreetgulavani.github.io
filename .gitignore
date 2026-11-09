@@ -1,0 +1,8 @@
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+vendor/
+# Generated per machine; GitHub Actions resolves its own.
+Gemfile.lock
+.DS_Store

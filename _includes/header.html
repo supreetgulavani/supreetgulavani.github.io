@@ -1,0 +1,7 @@
+<header class="wrap site-head ui">
+  <a href="{{ '/' | relative_url }}" class="brand" translate="no"{% if page.theme == 'home' %} aria-current="page"{% endif %}>SUPREET GULAVANI</a>
+  <nav aria-label="Primary">
+    <a href="{{ '/work/' | relative_url }}"{% if page.theme == 'work' %} aria-current="page"{% endif %}>WORK</a>
+    <a href="mailto:{{ site.email }}">CONTACT</a>
+  </nav>
+</header>

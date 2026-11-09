@@ -1,34 +1,28 @@
 title: Supreet Gulavani
 email: sgsupreetgulavani@gmail.com
 author: Supreet Gulavani
-description: >- 
-  Hello! I'm a Silicon Engineer.
-baseurl: "" 
-url: "https://supreetgulavani.github.io" 
-
-#theme: minima
+description: >-
+  Computer architecture and chip test (DFT). Pipelines, scan chains,
+  and making hardware testable.
+baseurl: ""
+url: "https://supreetgulavani.github.io"
 
 permalink: pretty
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-redirect-from
 
 markdown: kramdown
 kramdown:
   input: GFM
 
-navigation:
-  - title: Home
-    url: /
-  - title: About
-    url: /about/
-  - title: Projects
-    url: /projects/
-  - title: Resume
-    url: /resume/
-  - title: Contact
-    url: /contact/
+social:
+  name: Supreet Gulavani
+  links:
+    - https://github.com/supreetgulavani
+    - https://linkedin.com/in/supreetgulavani
 
 # Build settings
 exclude:
@@ -36,3 +30,4 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor/bundle
+  - AGENTS.md
