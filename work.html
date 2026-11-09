@@ -1,0 +1,110 @@
+---
+layout: default
+title: Work
+description: Experience, projects and skills in computer architecture, DFT, RTL and firmware.
+permalink: /work/
+theme: work
+theme_color: "#1A1E2E"
+scripts: [pipeline.js]
+redirect_from:
+  - /resume/
+  - /projects/
+  - /about/
+---
+{% assign w = site.data.work %}
+{% assign resume = '/assets/files/Supreet_Gulavani_Resume.pdf' | relative_url %}
+<div class="floor-stripe" aria-hidden="true"></div>
+<div class="wrap">
+  <section class="intro">
+    <h1 class="t-display">Clock the <span class="italic accent">pipeline</span></h1>
+    <p class="t-lead sub">I design and test processors for a living, so here is the short version of me running through one. Press Clock to move everything one stage.</p>
+
+    <div class="pipe js-only" data-pipeline>
+      <ol class="stages" aria-label="Pipeline stages">
+        {% assign stages = "FETCH,DECODE,EXECUTE,MEMORY,WRITE BACK" | split: "," %}
+        {% for s in stages %}<li class="stage" data-stage><span class="tag">{{ s }}</span><span class="stage-slot tag" data-slot>empty</span></li>
+        {% endfor %}
+      </ol>
+      <div class="pipe-controls">
+        <button type="button" class="btn btn-accent" data-clock>Clock ▸</button>
+        <p class="tag num sub">CYCLE <span data-cycle>0</span> / 7</p>
+        <p class="t-body pipe-note" aria-live="polite" data-note>Three things are loaded: my résumé, my skills, and a way to say hi.</p>
+      </div>
+      <div class="results">
+        {% for r in w.pipeline %}
+        <div class="card pop" data-result data-token="{{ r.token }}" hidden>
+          <span class="tag">WRITTEN BACK · {{ r.token | upcase }}</span>
+          <h2 class="t-h3">{{ r.title }}</h2>
+          <p class="t-small sub">{{ r.body }}</p>
+          {% if r.link %}<a class="t-small" href="{% if r.link contains '://' or r.link contains 'mailto:' %}{{ r.link }}{% else %}{{ r.link | relative_url }}{% endif %}">{{ r.link_text }}</a>{% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="now">
+    <div class="sec-head"><p class="tag"><b>IF</b> · FETCHING NOW</p><h2 id="now" class="t-h2">Now</h2></div>
+    <div class="sec-body">
+      <p class="t-lead">{{ w.now.title }}</p>
+      <p class="t-body sub">{{ w.now.body }}</p>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="experience">
+    <div class="sec-head"><p class="tag"><b>EX</b> · EXECUTED</p><h2 id="experience" class="t-h2">Experience</h2></div>
+    <div class="sec-body">
+      <ul class="jobs">
+        {% for j in w.jobs %}
+        <li class="job">
+          <div class="job-main">
+            <h3 class="t-item"><span translate="no">{{ j.company }}</span> · <span class="role">{{ j.role }}</span></h3>
+            {% if j.points %}<ul class="t-small">{% for p in j.points %}<li>{{ p }}</li>{% endfor %}</ul>{% endif %}
+          </div>
+          <p class="tag num job-when"><span>{{ j.dates | upcase }}</span> <span>{{ j.place | upcase }}</span></p>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="projects">
+    <div class="sec-head"><p class="tag"><b>MEM</b> · STORED</p><h2 id="projects" class="t-h2">Projects</h2></div>
+    <div class="sec-body">
+      <div class="project-grid">
+        {% for p in w.projects %}{% if p.show %}
+        <article class="card">
+          <span class="tag">{{ p.tag }}</span>
+          <h3 class="t-item">{{ p.name }}</h3>
+          <p class="t-small sub">{{ p.body }}</p>
+          {% if p.link %}<a class="t-small" href="{{ p.link }}">Code on GitHub <span aria-hidden="true">↗</span></a>{% endif %}
+        </article>
+        {% endif %}{% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="skills">
+    <div class="sec-head"><p class="tag"><b>WB</b> · WRITTEN BACK</p><h2 id="skills" class="t-h2">Skills &amp; school</h2></div>
+    <div class="sec-body" style="gap: 32px">
+      <div class="skill-groups">
+        {% for g in w.skills %}
+        <div>
+          <h3 class="tag">{{ g.group | upcase }}</h3>
+          <ul class="chips ui" translate="no">{% for s in g.items %}<li>{{ s }}</li>{% endfor %}</ul>
+        </div>
+        {% endfor %}
+      </div>
+      <ul class="edu t-body">
+        {% for e in w.education %}<li><b>{{ e.degree }}</b> · <span class="sub">{{ e.school }} · {{ e.date }}</span></li>
+        {% endfor %}
+      </ul>
+      {% if w.awards %}<ul class="edu t-small sub">{% for a in w.awards %}<li>{{ a }}</li>{% endfor %}</ul>{% endif %}
+      <a href="{{ resume }}" class="btn btn-accent" style="align-self: flex-start">Download the résumé (PDF)</a>
+    </div>
+  </section>
+
+  <div class="cross-link">
+    <a href="{{ '/curious/' | relative_url }}" class="btn btn-gloss">Just curious about me? <span aria-hidden="true">→</span></a>
+  </div>
+</div>

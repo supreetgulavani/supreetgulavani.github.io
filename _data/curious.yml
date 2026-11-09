@@ -1,0 +1,92 @@
+# Content for /curious/. Edit freely; the layout reads everything from here.
+
+# The intro cycles through these, then settles on "I am."
+words:
+  - a singer
+  - someone who’ll drive 20 hours and want more
+  - always changing the recipe
+  - a Vettel fan who stayed for Max
+  - behind a camera, sometimes
+  - an introvert, mostly
+  - overthinking this sentence
+
+# Songs on repeat (timing tower). Fill these in later.
+tracks:
+  - song: "[Song 1]"
+    artist: "[Artist]"
+  - song: "[Song 2]"
+    artist: "[Artist]"
+  - song: "[Song 3]"
+    artist: "[Artist]"
+  - song: "[Song 4]"
+    artist: "[Artist]"
+  - song: "[Song 5]"
+    artist: "[Artist]"
+
+# Photos live in /assets/images/photos/. Captions are placeholders to revisit.
+photos:
+  - file: mthood-1-1.jpg
+    w: 1200
+    h: 799
+    caption: Mt. Hood, from a distance
+    alt: Snow-capped Mount Hood above a hazy blue valley, framed by dark trees
+  - file: flowertrail.jpg
+    w: 799
+    h: 1200
+    caption: Blossom against blue
+    alt: Cherry blossoms against a deep blue sky
+  - file: whitesand.jpg
+    w: 1200
+    h: 799
+    caption: White dunes at dusk
+    alt: Pale sand dunes under a fading blue evening sky
+  - file: heart2.jpg
+    w: 1200
+    h: 799
+    caption: Someone left a heart
+    alt: A small white paper heart stuck to a dark pole in front of cherry blossoms
+  - file: rockmt.jpg
+    w: 799
+    h: 1200
+    caption: Stacked
+    alt: A stacked stone cairn in front of a rocky desert peak under clouds
+  - file: IMG_1226.jpg
+    w: 1200
+    h: 799
+    caption: One kite
+    alt: A single rainbow kite with a long tail against blue sky and soft clouds
+  - file: landscape-2.jpg
+    w: 1200
+    h: 799
+    caption: Desert ridge, late light
+    alt: A rugged desert ridge and dry grassland under big clouds
+  - file: flowers.jpg
+    w: 799
+    h: 1200
+    caption: Low to the ground
+    alt: Close-up of daisies in grass, shot from ground level
+  - file: bp-1.jpg
+    w: 1200
+    h: 799
+    caption: Riverside, a slow afternoon
+    alt: A grassy riverbank with a small sailboat, a bridge across the river behind
+  - file: wall.jpg
+    w: 1200
+    h: 799
+    caption: What’s left of a wall
+    alt: A low dry-stone wall in golden grass under an overcast sky
+  - file: ferriswheel.jpg
+    w: 799
+    h: 1200
+    caption: Looking up
+    alt: A Ferris wheel seen from below against a clear sky, with green leaves at the edge
+  - file: flowerbunch.jpg
+    w: 1200
+    h: 799
+    caption: Growing out of the bark
+    alt: A cluster of pink cherry blossoms growing straight from a mossy tree trunk
+  - file: buildsky.jpg
+    w: 1200
+    h: 799
+    caption: Cornice and cirrus
+    alt: The top corner of an old building against a teal sky with wispy clouds

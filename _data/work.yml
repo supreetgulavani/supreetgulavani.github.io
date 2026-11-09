@@ -1,0 +1,127 @@
+# Content for /work/. Edit freely; the layout reads everything from here.
+
+# The three items that move through the pipeline toy.
+pipeline:
+  - token: Résumé
+    title: The résumé
+    body: DFT at NXP, BIOS at Intel, FPGA and PCIe at HP. M.S. ECE, Portland State.
+    link_text: Download the PDF ↓
+    link: /assets/files/Supreet_Gulavani_Resume.pdf
+  - token: Skills
+    title: What I bring
+    body: RTL design, FPGA bring-up, DMA engines and PCIe. Scan, MBIST and IJTAG flows. SystemVerilog, C, C++ and Python.
+  - token: Say hi
+    title: Let’s talk
+    body: Open to roles in hardware design, verification, DFT and firmware.
+    link_text: Email me →
+    link: mailto:sgsupreetgulavani@gmail.com
+
+now:
+  title: Independent research on an LLM-based generator for IJTAG ICL and PDL (IEEE 1687).
+  body: Building tools that draft instrument networks and test procedures, then check them before they reach the flow. The code is private for now, but I’m happy to walk through it.
+
+jobs:
+  - company: HP
+    role: Firmware Engineer (contract)
+    dates: May 2024 – Feb 2025
+    place: Spring, TX
+    points:
+      - Developed a DMA engine in Verilog on a Lattice CertusPro-NX FPGA over AHBL via PCIe Gen3 x4.
+      - Ported the AHBL-based DMA engine to AXI-MM, aligning with next-gen IP integration.
+      - Collaborated on an M.2 PCIe Gen3 debug tool design and its documentation.
+      - Integrated ADC IP for real-time temperature display, and assisted in schematic reviews for tapeout.
+  - company: Intel
+    role: Firmware (BIOS) Developer Intern
+    dates: Oct 2022 – Jun 2023
+    place: Hillsboro, OR
+    points:
+      - Ported 20+ test cases to upcoming CPU platforms to extend CI/CD coverage.
+      - Refactored Slim Bootloader and resolved build-script issues.
+      - Authored a whitepaper and open-source documentation.
+  - company: NXP Semiconductors
+    role: DFT Intern
+    dates: Jun – Sep 2022
+    place: Austin, TX
+    points:
+      - Built an automation tool for ATPG report analysis.
+      - Worked on scan, MBIST and IJTAG flows for subsystem-level regression.
+  - company: Barclays
+    role: Graduate Analyst
+    dates: Aug 2020 – Aug 2021
+    place: Pune, India
+    points:
+      - Resolved API gateway issues and supported mission-critical systems.
+  - company: IoTIoT.in
+    role: AI Intern
+    dates: Dec 2018 – Feb 2019
+    place: Pune, India
+    points:
+      - Built a CNN for object detection to assist automated warehouse inventory.
+
+# Set `show: false` to hide a project without deleting it.
+projects:
+  - name: MQTT-based IoT weather station
+    tag: FPGA · NEXYS A7
+    body: Custom AXI Ethernet peripheral and I2C sensors, streaming over MQTT via LwIP on a bare-metal MicroBlaze.
+    show: true
+  - name: Space Invaders on a RISC-V softcore
+    tag: FPGA · RVFPGA
+    body: VGA controller and button drivers in SystemVerilog over Wishbone, with the game and drivers in C.
+    link: https://github.com/supreetgulavani
+    show: true
+  - name: DDR4 DRAM memory controller
+    tag: C++ · SIMULATION
+    body: Command scheduling across in-order, FR-FCFS and out-of-order policies, with queue logic and timing checks.
+    link: https://github.com/supreetgulavani
+    show: true
+  - name: RISC-V ISA simulator
+    tag: C++ · RV32I
+    body: Single- and multi-step breakpoints, MUL extension and syscall emulation.
+    link: https://github.com/supreetgulavani
+    show: true
+  - name: 2D multithreaded graphics renderer
+    tag: C · HAGL SDL
+    body: A study of frame-rate gains from 1 to 16 threads.
+    show: true
+  - name: RL channel allocation in cognitive radio networks
+    tag: NS3 · OPENAI GYM
+    body: Reinforcement learning for dynamic band and channel selection, reducing collisions over 75 episodes.
+    show: true
+  - name: RISC-V 5-stage pipelined CPU
+    tag: RTL · SYSTEMVERILOG
+    body: Hazard detection and forwarding, verified in QuestaSim with a modular testbench.
+    show: false
+  - name: Verifying RojoBlaze
+    tag: VERIFICATION · UVM
+    body: UVM-style testbench for an 8-bit, 4-stage microcontroller, reaching 65% functional and 68% code coverage.
+    show: false
+  - name: Adiabatic reversible logic
+    tag: LOW POWER · RESEARCH
+    body: Independent study of energy-efficient reversible gates through SystemVerilog simulation.
+    show: false
+
+skills:
+  - group: Test
+    items: [Scan, MBIST, IJTAG, ATPG]
+  - group: Languages
+    items: [SystemVerilog, Verilog, C, C++, Python, Bash]
+  - group: Protocols
+    items: [PCIe Gen3, AXI, AHB, Wishbone, UART, SPI, I2C]
+  - group: Architectures
+    items: [RISC-V, x86, MIPS]
+  - group: Tools
+    items: [Vivado, ModelSim, QuestaSim, Git, GDB, Make]
+  - group: Platforms
+    items: [Xilinx Artix-7, Lattice CertusPro-NX, UEFI, Linux, RTOS]
+
+education:
+  - degree: M.S. Electrical & Computer Engineering
+    school: Portland State University
+    date: Jun 2023
+  - degree: B.E. Electronics & Telecommunication
+    school: Savitribai Phule Pune University
+    date: May 2020
+
+awards:
+  - 2nd place, Barclays Tech Innovation Challenge, India, 2017
+  - 3rd place, National Entrepreneur Challenge, India, 2018

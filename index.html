@@ -1,0 +1,45 @@
+---
+layout: default
+theme: home
+theme_color: "#0E1018"
+scripts: [lights.js]
+redirect_from:
+  - /contact/
+---
+<div class="wrap">
+  <section class="hero">
+    <div class="hero-text">
+      <h1 class="t-display" translate="no">Supreet <span class="italic accent">Gulavani</span></h1>
+      <p class="t-lead sub">I work on computer architecture and chip test (DFT): pipelines, scan chains, and making hardware testable.</p>
+    </div>
+
+    <div class="lights js-only" data-lights data-phase="idle">
+      <h2 class="tag">LIGHTS OUT · TEST YOUR REACTION</h2>
+      <div class="gantry" role="img" aria-label="0 of 5 start lights on" data-gantry>
+        {% for i in (1..5) %}<div class="pod" aria-hidden="true" data-pod><span class="lamp"></span><span class="lamp"></span></div>
+        {% endfor %}
+      </div>
+      <button type="button" class="btn lights-btn" data-lights-btn>Start the lights</button>
+      <p class="t-small num lights-note" aria-live="polite" data-lights-note>Five red lights. When they all go out, hit the button as fast as you can.</p>
+      <p class="tag num lights-best" data-lights-best>BEST · —</p>
+    </div>
+  </section>
+
+  <section class="paths" aria-labelledby="q">
+    <h2 id="q" class="t-h2">what are you here for?</h2>
+    <div class="path-grid">
+      <a href="{{ '/work/' | relative_url }}" class="path path-work">
+        <span class="stripe" aria-hidden="true"></span>
+        <span class="t-h2">I’m hiring <span class="arrow" aria-hidden="true">→</span></span>
+        <span class="t-body">Résumé, projects and experience at NXP, Intel and HP, plus a five-stage pipeline you can clock yourself.</span>
+      </a>
+      <a href="{{ '/curious/' | relative_url }}" class="path path-curious">
+        <span class="blade" aria-hidden="true"></span>
+        <span class="pinline" aria-hidden="true"></span>
+        <span class="sheen" aria-hidden="true"></span>
+        <span class="t-h2">Just curious <span class="arrow" aria-hidden="true">→</span></span>
+        <span class="t-body">The person behind the résumé: music, photographs, long drives, F1 and a kitchen full of experiments.</span>
+      </a>
+    </div>
+  </section>
+</div>

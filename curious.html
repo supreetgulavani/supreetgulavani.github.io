@@ -1,0 +1,126 @@
+---
+layout: default
+title: Just curious
+description: The person behind the résumé — music, photographs, long drives, F1 and a kitchen full of experiments.
+permalink: /curious/
+theme: curious
+theme_color: "#F6F6F4"
+scripts: [iam.js]
+---
+{% assign c = site.data.curious %}
+
+<section class="band intro-band" aria-labelledby="intro">
+  <img class="ghost-photo" src="{{ '/assets/images/photos/mthood-1-1.jpg' | relative_url }}" alt="" aria-hidden="true" width="1200" height="799" fetchpriority="low">
+  <span class="blade" aria-hidden="true"></span>
+  <span class="blade-line" aria-hidden="true"></span>
+  <span class="gloss" aria-hidden="true"></span>
+  <div class="wrap band-in" data-iam data-words='{{ c.words | jsonify }}'>
+    <p class="tag kicker">INTRO</p>
+    <h1 id="intro" class="t-display iam" aria-label="I am."><span aria-hidden="true">I am<span data-iam-word></span><span data-iam-dot>.</span></span></h1>
+    <div class="iam-row">
+      <p class="t-lead">I introspect a lot, enough that it tips into overthinking. Mostly an introvert, and sometimes, surprisingly, not. I can’t give you a complete answer to who I am, so here are the pieces.</p>
+      <button type="button" class="btn btn-ghost js-only" data-iam-skip hidden>Skip ↦</button>
+      <button type="button" class="btn btn-ghost js-only" data-iam-replay hidden>Say it again ↺</button>
+    </div>
+    <p class="sr-only">I am a singer, a driver, a tinkerer in the kitchen, a Formula 1 fan, a one-time competitive swimmer, sometimes a photographer, and an introvert who can be an extrovert.</p>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="music">
+  <span class="decal" aria-hidden="true">01</span>
+  <span class="pin" aria-hidden="true" style="top: 34px"></span>
+  <div class="wrap band-in music">
+    <div class="music-text">
+      <p class="tag kicker">VERSE 1</p>
+      <h2 id="music" class="t-h2">A house full of music</h2>
+      <p class="t-body">I was born into a family of Indian classical musicians, so music was never something I had to go looking for. It was already playing. I sing, and I play the guitar: very basic, and I’m fine with that.</p>
+      <p class="t-body">These are the songs on repeat right now. Ask me to sing one.</p>
+    </div>
+    <div class="tower">
+      <table>
+        <caption class="tag">ON REPEAT · THIS WEEK</caption>
+        <thead>
+          <tr><th scope="col" class="tag c-pos">POS</th><th scope="col" class="c-bar"><span class="sr-only">Marker</span></th><th scope="col" class="tag">SONG</th><th scope="col" class="tag c-gap">GAP</th></tr>
+        </thead>
+        <tbody>
+          {% for t in c.tracks %}
+          <tr>
+            <td class="ui num c-pos">P{{ forloop.index }}</td>
+            <td class="c-bar"><span class="bar" aria-hidden="true"></span></td>
+            <td><span class="song t-small">{{ t.song }}</span><span class="artist tag">{{ t.artist }}</span></td>
+            <td class="tag num c-gap">{% if forloop.first %}LEADER{% else %}+{{ forloop.index0 }}&nbsp;PLAYS{% endif %}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="band band-dark" aria-labelledby="photos">
+  <span class="decal" aria-hidden="true">02</span>
+  <div class="wrap band-in">
+    <p class="tag kicker">VERSE 2</p>
+    <h2 id="photos" class="t-h2">Through the lens</h2>
+    <p class="t-body">I take photos when something makes me stop. I wouldn’t call myself good at it, but these are a few I like.</p>
+    <div class="photos">
+      {% for p in c.photos %}
+      <figure class="shot">
+        <img src="{{ p.file | prepend: '/assets/images/photos/' | relative_url }}" alt="{{ p.alt }}" width="{{ p.w }}" height="{{ p.h }}" loading="lazy" decoding="async">
+        <figcaption class="tag">{{ p.caption }}</figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+    <div class="later">
+      <h3 class="t-h3">Films</h3>
+      <p class="t-small">I used to watch a lot of cinema, and still do whenever I get the time. Picking favourites is hard, so this shelf is still being stocked.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="speed">
+  <span class="decal" aria-hidden="true">03</span>
+  <span class="pin" aria-hidden="true" style="top: 40px"></span>
+  <span class="pin pin-thin" aria-hidden="true" style="top: 50px"></span>
+  <div class="wrap band-in">
+    <p class="tag kicker">BRIDGE</p>
+    <h2 id="speed" class="t-h2">Speed, mostly</h2>
+    <div class="tiles">
+      <div class="tile tile-red"><p class="tag">ON TRACK</p><h3 class="t-h3">Formula 1</h3><p class="t-small">A Red Bull Racing fan since the Vettel years, and still here for Max.</p></div>
+      <div class="tile tile-carbon"><p class="tag">ON THE ROAD</p><h3 class="t-h3">Behind the wheel</h3><p class="t-small">Cars and motorcycles. I can drive 10 to 20 hours straight and want to go again the next day.</p></div>
+      <div class="tile tile-panel"><p class="tag">IN THE WATER</p><h3 class="t-h3">Swimming</h3><p class="t-small">I swam competitively in school.</p></div>
+      <div class="tile tile-silver"><p class="tag">ON THE COUCH</p><h3 class="t-h3">Cricket</h3><p class="t-small">Mostly watching these days.</p></div>
+    </div>
+    <div class="later">
+      <h3 class="t-h3">The longest drive</h3>
+      <p class="t-small">A story for later.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band band-red" aria-labelledby="chorus">
+  <span class="decal" aria-hidden="true">04</span>
+  <div class="wrap band-in">
+    <p class="tag kicker">CHORUS</p>
+    <h2 id="chorus" class="t-h2">Take it apart.<br>Take it apart.<br>Take it apart, <span class="italic">and understand it.</span></h2>
+    <p class="t-body">That’s the line I keep coming back to. In the kitchen it means changing the recipe and working out the chemistry of why it changed. At work it means making chips testable, so you can see what’s happening inside. Mostly, I just follow whatever fascinates me.</p>
+    <div class="later">
+      <h3 class="t-h3">A dish I keep changing</h3>
+      <p class="t-small">Recipe, and what I changed, coming soon.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="outro">
+  <span class="decal" aria-hidden="true">05</span>
+  <span class="gloss" aria-hidden="true"></span>
+  <div class="wrap band-in" style="padding-bottom: 56px">
+    <p class="tag kicker">OUTRO</p>
+    <h2 id="outro" class="t-h2">Ask me about any of it.</h2>
+    <div class="outro-actions">
+      <a href="mailto:{{ site.email }}" class="btn btn-red">Email me</a>
+      <a href="{{ '/work/' | relative_url }}" class="btn btn-night">Or see the work <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="end-stripe" aria-hidden="true"></div>
+  </div>
+</section>
