@@ -36,7 +36,7 @@ redirect_from:
           <span class="tag">WRITTEN BACK · {{ r.token | upcase }}</span>
           <h2 class="t-h3">{{ r.title }}</h2>
           <p class="t-small sub">{{ r.body }}</p>
-          {% if r.link %}<a class="t-small" href="{% if r.link contains '://' or r.link contains 'mailto:' %}{{ r.link }}{% else %}{{ r.link | relative_url }}{% endif %}">{{ r.link_text }}</a>{% endif %}
+          {% if r.link %}{% if r.link contains 'github.com' or r.link contains 'linkedin.com' %}<a class="t-small" href="{{ r.link }}" target="_blank" rel="noopener noreferrer">{{ r.link_text }}<span class="sr-only"> (opens in a new tab)</span></a>{% else %}<a class="t-small" href="{% if r.link contains '://' or r.link contains 'mailto:' %}{{ r.link }}{% else %}{{ r.link | relative_url }}{% endif %}">{{ r.link_text }}</a>{% endif %}{% endif %}
         </div>
         {% endfor %}
       </div>
@@ -77,7 +77,7 @@ redirect_from:
           <span class="tag">{{ p.tag }}</span>
           <h3 class="t-item">{{ p.name }}</h3>
           <p class="t-small sub">{{ p.body }}</p>
-          {% if p.link %}<a class="t-small" href="{{ p.link }}">Code on GitHub <span aria-hidden="true">↗</span></a>{% endif %}
+          {% if p.link %}<a class="t-small" href="{{ p.link }}" target="_blank" rel="noopener noreferrer">Code on GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>{% endif %}
         </article>
         {% endif %}{% endfor %}
       </div>
