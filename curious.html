@@ -40,7 +40,7 @@ scripts: [iam.js]
       <table>
         <caption class="tag">ON REPEAT · THIS WEEK</caption>
         <thead>
-          <tr><th scope="col" class="tag c-pos">POS</th><th scope="col" class="c-bar"><span class="sr-only">Marker</span></th><th scope="col" class="tag">SONG</th><th scope="col" class="tag c-gap">GAP</th></tr>
+          <tr><th scope="col" class="tag c-pos">POS</th><th scope="col" class="c-bar"><span class="sr-only">Marker</span></th><th scope="col" class="tag">SONG</th><th scope="col" class="tag c-gap">PLAYS</th></tr>
         </thead>
         <tbody>
           {% for t in c.tracks %}
@@ -48,7 +48,7 @@ scripts: [iam.js]
             <td class="ui num c-pos">P{{ forloop.index }}</td>
             <td class="c-bar"><span class="bar" aria-hidden="true"></span></td>
             <td><span class="song t-small">{{ t.song }}</span><span class="artist tag">{{ t.artist }}</span></td>
-            <td class="tag num c-gap">{% if forloop.first %}LEADER{% else %}+{{ forloop.index0 }}&nbsp;PLAYS{% endif %}</td>
+            <td class="tag num c-gap">{% if t.plays %}{{ t.plays }}{% else %}<span aria-hidden="true">—</span><span class="sr-only">not counted yet</span>{% endif %}</td>
           </tr>
           {% endfor %}
         </tbody>

@@ -11,17 +11,24 @@ words:
   - overthinking this sentence
 
 # Songs on repeat (timing tower). Fill these in later.
+# List them from most to least played; P1 is the first one.
+# `plays` is optional: a number shows in the PLAYS column, blank shows "—".
 tracks:
   - song: "[Song 1]"
     artist: "[Artist]"
+    plays:
   - song: "[Song 2]"
     artist: "[Artist]"
+    plays:
   - song: "[Song 3]"
     artist: "[Artist]"
+    plays:
   - song: "[Song 4]"
     artist: "[Artist]"
+    plays:
   - song: "[Song 5]"
     artist: "[Artist]"
+    plays:
 
 # Photos live in /assets/images/photos/. Captions are placeholders to revisit.
 photos:
