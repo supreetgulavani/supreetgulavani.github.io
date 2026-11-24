@@ -36,7 +36,7 @@
   --bg: #0E1018; --ink: #E8E4DA; --sub: #9EA3B1; --line: #22263A;
   --panel: #151824; --deep: #090A10; --soft: #C9CBD3;
   --focus: #D9B44A; --accent: #D9B44A;
-  --lamp: #E0453D; --lamp-off: #24283A; --red-fill: #AE2E2B;
+  --lamp: #E0453D; --lamp-off: #24283A; --red-fill: #AE2E2B; --go: #3DBE6C;
 }
 .theme-work {
   color-scheme: dark;
@@ -156,9 +156,9 @@ html:not(.js) .js-only { display: none !important; }
   opacity: 0; transition: opacity .08s linear;
 }
 .pod.is-on .lamp::after { opacity: 1; }
-.lights-btn { width: 100%; background: var(--red-fill); color: #F4EEE4; }
+.lights-btn { width: 100%; min-height: 60px; font-size: var(--fs-lead); background: var(--red-fill); color: #F4EEE4; }
 .lights[data-phase="arming"] .lights-btn { background: #252A3D; color: var(--ink); }
-.lights[data-phase="go"] .lights-btn { background: var(--accent); color: var(--deep); }
+.lights[data-phase="go"] .lights-btn { background: var(--go); color: var(--deep); }
 .lights-note { color: var(--soft); min-height: 48px; }
 .lights-best { color: var(--sub); border-top: 1px solid var(--line); padding-top: 12px; }
 

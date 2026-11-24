@@ -13,9 +13,9 @@
   var sec = function (ms) { return fmt.format(ms / 1000) + ' s'; };
   var now = function () { return window.performance && performance.now ? performance.now() : Date.now(); };
 
-  var LABEL = { idle: 'Start the lights', arming: 'Wait…', go: 'GO!', done: 'Again ↺', jump: 'Try again ↺' };
+  var LABEL = { idle: btn.textContent, arming: 'Wait…', go: 'GO!', done: 'Again ↺', jump: 'Try again ↺' };
   var NOTE = {
-    idle: 'Five red lights. When they all go out, hit the button as fast as you can.',
+    idle: note.textContent,   // starting text lives in index.html
     arming: 'Wait for it…',
     go: 'Lights out and away we go!',
     jump: 'Jump start! You went before the lights went out. Go again.'
@@ -67,6 +67,7 @@
       set('done', sec(ms) + '. ' + verdict(ms));
       return;
     }
+    if (phase === 'done' || phase === 'jump') { setLit(0); set('idle'); return; }   // back to the start screen
     start();
   }
 
