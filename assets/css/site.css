@@ -54,6 +54,8 @@
 
 /* 3. Base + shared structure -------------------------------------------- */
 *, *::before, *::after { box-sizing: border-box; }
+/* Keep the hidden attribute working on elements that set their own display. */
+[hidden] { display: none !important; }
 html { -webkit-text-size-adjust: 100%; background: var(--bg); }
 @media (pointer: fine) { html { overscroll-behavior: none; } }
 body {
