@@ -17,7 +17,7 @@ redirect_from:
 <div class="wrap">
   <section class="intro">
     <h1 class="t-display">Clock the <span class="italic accent">pipeline</span></h1>
-    <p class="t-lead sub">I design and test processors for a living, so here is the short version of me running through one. Press Clock to move everything one stage.</p>
+    <p class="t-lead sub">A quick professional summary through a pipeline. Press Clock to move everything one stage.</p>
 
     <div class="pipe js-only" data-pipeline>
       <ol class="stages" aria-label="Pipeline stages">
@@ -28,7 +28,7 @@ redirect_from:
       <div class="pipe-controls">
         <button type="button" class="btn btn-accent" data-clock>Clock ▸</button>
         <p class="tag num sub">CYCLE <span data-cycle>0</span> / 7</p>
-        <p class="t-body pipe-note" aria-live="polite" data-note>Three things are loaded: my résumé, my skills, and a way to say hi.</p>
+        <!-- <p class="t-body pipe-note" aria-live="polite" data-note>Three things are loaded: my résumé, my skills, and a way to say hi.</p> -->
       </div>
       <div class="results">
         {% for r in w.pipeline %}
@@ -46,8 +46,10 @@ redirect_from:
   <section class="sec" aria-labelledby="now">
     <div class="sec-head"><p class="tag"><b>IF</b> · FETCHING NOW</p><h2 id="now" class="t-h2">Now</h2></div>
     <div class="sec-body">
-      <p class="t-lead">{{ w.now.title }}</p>
-      <p class="t-body sub">{{ w.now.body }}</p>
+      <h3 class="t-h3"><span translate="no">{{ w.now.name }}</span>: {{ w.now.tagline }}</h3>
+      {% for p in w.now.paragraphs %}<p class="t-body sub">{{ p }}</p>
+      {% endfor %}
+      <p class="t-body accent">{{ w.now.status }}</p>
     </div>
   </section>
 

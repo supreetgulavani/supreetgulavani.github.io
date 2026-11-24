@@ -2,40 +2,40 @@
 
 # The intro cycles through these, then settles on "I am."
 words:
+  - an introvert, mostly
+  - a Vettel fan who stayed for Max
   - a singer
   - someone who’ll drive 20 hours and want more
   - always changing the recipe
-  - a Vettel fan who stayed for Max
   - behind a camera, sometimes
-  - an introvert, mostly
   - overthinking this sentence
 
 # Songs on repeat (timing tower). Fill these in later.
 # List them from most to least played; P1 is the first one.
 # `plays` is optional: a number shows in the PLAYS column, blank shows "—".
 tracks:
-  - song: "[Song 1]"
-    artist: "[Artist]"
-    plays:
-  - song: "[Song 2]"
-    artist: "[Artist]"
-    plays:
-  - song: "[Song 3]"
-    artist: "[Artist]"
-    plays:
-  - song: "[Song 4]"
-    artist: "[Artist]"
-    plays:
-  - song: "[Song 5]"
-    artist: "[Artist]"
-    plays:
+  - song: "Nude"
+    artist: "Radiohead"
+    plays: 36
+  - song: "Ancestral"
+    artist: "Steven Wilson"
+    plays: 34
+  - song: "Cold Little Heart"
+    artist: "Michael Kiwanuka"
+    plays: 29
+  - song: "High Hopes"
+    artist: "Pink Floyd"
+    plays: 28
+  - song: "Nobody Knows"
+    artist: "Russ"
+    plays: 27
 
 # Photos live in /assets/images/photos/. Captions are placeholders to revisit.
 photos:
   - file: mthood-1-1.jpg
     w: 1200
     h: 799
-    caption: Mt. Hood, from a distance
+    caption: Hood Times (Mt. Hood, Portland, OR)
     alt: Snow-capped Mount Hood above a hazy blue valley, framed by dark trees
   - file: flowertrail.jpg
     w: 799
@@ -45,7 +45,7 @@ photos:
   - file: whitesand.jpg
     w: 1200
     h: 799
-    caption: White dunes at dusk
+    caption: Time Immemorial (White Sands National Park, NM)
     alt: Pale sand dunes under a fading blue evening sky
   - file: heart2.jpg
     w: 1200
@@ -60,37 +60,37 @@ photos:
   - file: IMG_1226.jpg
     w: 1200
     h: 799
-    caption: One kite
+    caption: One kite 
     alt: A single rainbow kite with a long tail against blue sky and soft clouds
   - file: landscape-2.jpg
     w: 1200
     h: 799
-    caption: Desert ridge, late light
+    caption: Desert ridge, late light (Guadalupe Mountains National Park, TX)
     alt: A rugged desert ridge and dry grassland under big clouds
   - file: flowers.jpg
     w: 799
     h: 1200
-    caption: Low to the ground
+    caption: Low to the ground 
     alt: Close-up of daisies in grass, shot from ground level
   - file: bp-1.jpg
     w: 1200
     h: 799
-    caption: Riverside, a slow afternoon
+    caption: Whatever floats your boat.
     alt: A grassy riverbank with a small sailboat, a bridge across the river behind
   - file: wall.jpg
     w: 1200
     h: 799
-    caption: What’s left of a wall
+    caption: Still Strong
     alt: A low dry-stone wall in golden grass under an overcast sky
   - file: ferriswheel.jpg
     w: 799
     h: 1200
-    caption: Looking up
+    caption: Look up
     alt: A Ferris wheel seen from below against a clear sky, with green leaves at the edge
   - file: flowerbunch.jpg
     w: 1200
     h: 799
-    caption: Growing out of the bark
+    caption: Where there is a will
     alt: A cluster of pink cherry blossoms growing straight from a mossy tree trunk
   - file: buildsky.jpg
     w: 1200

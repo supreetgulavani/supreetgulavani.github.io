@@ -32,7 +32,7 @@
     });
     results.forEach(function (r, i) { r.hidden = cyc < S + i; });
     cycleEl.textContent = cyc;
-    noteEl.textContent = note();
+    if (noteEl) noteEl.textContent = note();
     btn.textContent = cyc >= LAST ? 'Run it again ↺' : 'Clock ▸';
   }
 
