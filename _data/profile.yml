@@ -1,0 +1,15 @@
+# Who you are, for search engines (structured data on every page).
+# Schools come from _data/work.yml; GitHub and LinkedIn from _config.yml.
+description: M.S. ECE (Computer Architecture). Works across RTL design, design verification and DFT.
+location: India
+knows_about:
+  - ASIC design
+  - RTL design
+  - Design for test (DFT)
+  - IJTAG (IEEE 1687)
+  - Design verification
+  - Computer architecture
+  - FPGA prototyping
+  - PCIe
+  - SystemVerilog
+  - Firmware

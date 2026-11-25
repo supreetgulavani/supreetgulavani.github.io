@@ -1,0 +1,22 @@
+{%- comment -%} Tells search engines this site is about a person. Home is the profile page. {%- endcomment -%}
+{%- assign p = site.data.profile -%}
+{%- capture person -%}
+"@type": "Person",
+"@id": {{ '/#person' | absolute_url | jsonify }},
+"name": {{ site.author | jsonify }},
+"url": {{ '/' | absolute_url | jsonify }},
+"description": {{ p.description | jsonify }},
+"homeLocation": { "@type": "Country", "name": {{ p.location | jsonify }} },
+"alumniOf": [{% for e in site.data.work.education %}{ "@type": "CollegeOrUniversity", "name": {{ e.school | jsonify }} }{% unless forloop.last %}, {% endunless %}{% endfor %}],
+"knowsAbout": {{ p.knows_about | jsonify }},
+"sameAs": {{ site.social.links | jsonify }}
+{%- endcapture -%}
+{%- if page.url == '/' -%}
+<script type="application/ld+json">
+{ "@context": "https://schema.org", "@type": "ProfilePage", "@id": {{ '/#profile' | absolute_url | jsonify }}, "url": {{ '/' | absolute_url | jsonify }}, "name": {{ site.title | jsonify }}, "mainEntity": { {{ person }} } }
+</script>
+{%- elsif page.sitemap != false -%}
+<script type="application/ld+json">
+{ "@context": "https://schema.org", {{ person }} }
+</script>
+{%- endif %}

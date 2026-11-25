@@ -162,8 +162,8 @@ html:not(.js) .js-only { display: none !important; }
 .lights-note { color: var(--soft); min-height: 48px; }
 .lights-best { color: var(--sub); border-top: 1px solid var(--line); padding-top: 12px; }
 
-.paths { padding: 8px 0 88px; }
-.paths h2 { font-style: italic; font-weight: 400; margin-bottom: 24px; }
+.paths { padding: 8px 0 40px; }
+.paths h2 { font-style: italic; margin-bottom: 24px; }
 .path-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 20px; }
 .path {
   position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 16px;
@@ -186,6 +186,10 @@ html:not(.js) .js-only { display: none !important; }
 .path-curious .blade { position: absolute; left: -20px; right: -20px; bottom: 26px; height: 34px; transform: skewY(-5deg); background: #B5121B; }
 .path-curious .pinline { position: absolute; left: -20px; right: -20px; bottom: 16px; height: 4px; transform: skewY(-5deg); background: #17181C; }
 .path-curious .sheen { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(115deg, rgba(255,255,255,0) 0 40%, rgba(255,255,255,.7) 48%, rgba(255,255,255,0) 56%); }
+
+.bio { max-width: 720px; padding-bottom: 88px; display: flex; flex-direction: column; gap: 12px; color: var(--sub); }
+.bio a { color: var(--accent); text-underline-offset: 4px; }
+.bio a:hover { color: var(--ink); }
 
 /* 5. Work · Nineteen ----------------------------------------------------- */
 .floor-stripe { height: 6px; background: linear-gradient(90deg, var(--red) 0 62%, var(--accent) 62% 100%); }
@@ -275,7 +279,7 @@ html:not(.js) .js-only { display: none !important; }
 .intro-band .band-in { padding-bottom: 240px; gap: 24px; }
 .ghost-photo {
   position: absolute; right: 0; top: 0; width: min(68%, 900px); height: 100%;
-  object-fit: cover; filter: grayscale(1) contrast(1.15); opacity: .16; pointer-events: none;
+  object-fit: cover; opacity: .16; pointer-events: none;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 45%);
   mask-image: linear-gradient(90deg, transparent, #000 45%);
 }
